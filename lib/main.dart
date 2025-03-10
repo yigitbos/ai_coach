@@ -1,4 +1,5 @@
-import 'package:ai_coach/splash_screen.dart';
+import 'package:ai_coach/screens/login_screen.dart';
+import 'package:ai_coach/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: LoginScreen(),
     );
   }
 }
