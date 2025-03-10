@@ -4,7 +4,8 @@ enum AppPadings {
   low(8.0),
   medium(16.0),
   high(24.0),
-  veryHigh(32.0);
+  veryHigh(32.0),
+  veryVeryHigh(40);
 
   final double value;
   const AppPadings(this.value);
