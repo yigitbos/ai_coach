@@ -21,7 +21,7 @@ class _LoginButton extends StatelessWidget {
             ),
           ),
           child: Text(
-            'Login',
+            CustomKeys.login,
             style: Theme.of(
               context,
             ).textTheme.headlineLarge!.copyWith(color: Colors.white),

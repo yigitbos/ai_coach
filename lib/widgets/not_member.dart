@@ -8,7 +8,7 @@ class _NotMember extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: AppPadings.veryVeryHigh.value),
       child: Text(
-        'Not a member ?',
+        CustomKeys.notMember,
         style: Theme.of(context).textTheme.headlineSmall!.copyWith(
           color: Colors.white,
           fontWeight: FontWeight.bold,

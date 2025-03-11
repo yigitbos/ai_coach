@@ -14,7 +14,7 @@ class _CheckBoxLogin extends StatelessWidget {
             activeColor: Colors.green,
           ),
           Text(
-            'Remember me',
+            CustomKeys.rememberMe,
             style: Theme.of(
               context,
             ).textTheme.titleLarge!.copyWith(color: Colors.white),

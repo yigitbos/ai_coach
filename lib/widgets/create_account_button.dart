@@ -21,7 +21,7 @@ class _CreateAccountButton extends StatelessWidget {
             ),
           ),
           child: Text(
-            'Create Account',
+            CustomKeys.createAccount,
             style: Theme.of(context).textTheme.bodyLarge!.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.bold,

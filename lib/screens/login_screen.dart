@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ai_coach/utils/app_padings.dart';
 import 'package:ai_coach/widgets/gradient_background.dart';
 import 'package:ai_coach/widgets/mixins/controller_mixin.dart';
+import 'package:ai_coach/utils/keys.dart';
 
 part 'package:ai_coach/widgets/textfields_login.dart';
 part 'package:ai_coach/widgets/checkboxx_login.dart';
@@ -18,8 +19,6 @@ class LoginScreen extends StatefulWidget {
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
-
-final String _memberLogin = 'Member Login';
 
 class _LoginScreenState extends State<LoginScreen> with ControllerMixin {
   @override
@@ -39,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> with ControllerMixin {
                 Padding(
                   padding: EdgeInsets.only(top: AppPadings.medium.value),
                   child: Text(
-                    _memberLogin,
+                    CustomKeys.memberLogin,
                     style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -47,13 +46,13 @@ class _LoginScreenState extends State<LoginScreen> with ControllerMixin {
                   ),
                 ),
                 _TextfieldsLogin(
-                  hintText: 'Email',
+                  hintText: CustomKeys.email,
                   controller: emailController,
                   iconData: Icons.person,
                   keyboardType: TextInputType.emailAddress,
                 ),
                 _TextfieldsLogin(
-                  hintText: 'Password',
+                  hintText: CustomKeys.password,
                   controller: passwordController,
                   iconData: Icons.lock,
                   obscureText: true,

@@ -9,7 +9,7 @@ class _ForgotPasswordText extends StatelessWidget {
       padding: EdgeInsets.only(left: AppPadings.high.value),
       child: RichText(
         text: TextSpan(
-          text: 'Forgot Password?',
+          text: CustomKeys.forgotPassword,
           style: Theme.of(context).textTheme.titleLarge!.copyWith(
             color: Colors.white,
             decoration: TextDecoration.underline,
